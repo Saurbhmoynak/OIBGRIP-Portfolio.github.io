@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&display=swap');
+
 *{
   padding: 0;
   margin: 0;
@@ -167,7 +169,7 @@ header{
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background: #98a7fc;
+  background: #dddddd;
   overflow: hidden;
   margin-bottom: 2rem;
 }
@@ -194,7 +196,9 @@ header{
   align-items: center;
   column-gap: 0.5rem;
   font-size: 1rem;
-  color: var(--main-color)
+  color: #fff;
+  font-family: 'Inconsolata', monospace;
+  letter-spacing: 5px;
 }
 
 .home-text h3::before{
