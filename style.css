@@ -22,6 +22,7 @@
   --heading-color: #222232;
   --box-color:#0d0f26;
   --bg-color: #fff;
+  --btn-color:rgb(243, 152, 33);
 }
 
 body{
@@ -111,7 +112,7 @@ header{
 }
 
 .active:hover{
-  color: rgb(255, 89, 89);
+  color: rgb(40, 244, 255);
 }
 
 .menu-icon{
@@ -206,7 +207,7 @@ header{
   position: absolute;
   top: 50%;
   transform: translate(-50%);
-  left: -15px;
+  left: -25px;
   width: 20px;
   height: 2px;
   background: var(--main-color);
@@ -217,7 +218,7 @@ header{
   position: absolute;
   top: 50%;
   transform: translate(-50%);
-  right: -35px;
+  right: -37px;
   width: 20px;
   height: 2px;
   background: var(--main-color);
@@ -247,8 +248,9 @@ header{
 }
 
 .social .bx:hover{
-  background: var(--main-color);
+  background: var(--btn-color);
   transition: 0.3s all linear;
+  color: var(--box-color);
 }
 
 .heading{
@@ -309,6 +311,10 @@ header{
   transition: 0.3s all linear;
 }
 
+.about-text h2{
+  color: #54c9fff4;
+}
+
 .about-text p{
   margin-left: 50px;
   margin-right: 50px;
@@ -323,14 +329,14 @@ header{
   margin-bottom: 1.5rem;
 }
 
-.services-content{
+.certificates-content{
   margin-top: 100px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(4,1fr);
   gap:2rem; 
 }
 
-.services-box{
+.certificates-box{
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -342,26 +348,26 @@ header{
 
 }
 
-.services-box:hover{
+.certificates-box:hover{
   transform: scale(1.05);
   transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.services-box .bx{
+.certificates-box .bx{
   font-size: 1.4rem;
   padding: 10px;
   border-radius: 5rem;
   border: 2px dashed var(--bg-color);
 }
 
-.services-box h2{
+.certificates-box h2{
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0.5rem 0;
   color: var(--main-color);
 }
 
-services-box p{
+.certificates-box p{
   font-size: 0.9rem;
 }
 
@@ -380,6 +386,7 @@ services-box p{
   overflow: hidden;
 }
 
+.certificates-img,
 .portfolio-img{
   width: 100%;
   height: 100%;
@@ -475,12 +482,15 @@ services-box p{
   text-transform: uppercase;
   padding: 12px;
   background: var(--main-color);
+  color: black;
+  font-weight: bold;
   cursor: pointer;
   align-items: center;
 }
 
 .contact-form .send-btn:hover{
-  background:#546eff;
+  background:#23307a;
+  color: #fff;
   transition: 0.3s all linear;
 }
 
@@ -500,6 +510,7 @@ services-box p{
 .footer-links a{
   font-size: 1rem;
   font-weight: 400;
+  margin-left: 10px;
   color: var(--bg-color);
 }
 
@@ -578,7 +589,7 @@ services-box p{
   .home-text p{
     font-size: 0.825rem;
   }
-  .services-content{
+  .certificates-content{
     grid-template-columns: repeat(2,1fr);
   }
   .portfolio-box{
@@ -627,10 +638,16 @@ services-box p{
     font-size: 0.825 rem;
     margin-bottom: 1.3rem;
    }
-   .services-content,
+   .certificates-content,
   .portfolio-content,
   .project-content{
     grid-template-columns: 1fr;
+  }
+  .certificates-img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
@@ -662,7 +679,7 @@ services-box p{
     line-height: 2.1rem;
     margin: 0.6rem 0;
   }
-  .services-content,
+  .certificates-content,
   .portfolio-content,
   .project-content{
     grid-template-columns: 1fr;
@@ -670,6 +687,12 @@ services-box p{
   .footer-links{
     flex-direction: column;
     row-gap: 1rem;
+  }
+  .certificates-img{
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
