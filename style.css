@@ -303,6 +303,7 @@ header{
   line-height: 2.6rem;
   font-weight: 700;
   margin: 1rem 0; 
+  color: aqua;
 }
 
 
@@ -411,7 +412,7 @@ header{
     width: 2px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--bg-color);
+    background-color: var(--main-color);
   }
   .timeline ul li{
     width: 50%;
